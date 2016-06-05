@@ -1,0 +1,51 @@
+Recursion:
+
+1) Function calling itself
+2) Since recursion can continuously and infinitly call itself it needs to know when to stop which
+is why implementing a base case is required. Otherwise, a runtime error will pop up stating that the
+maximum recursion depth exceeded. 
+
+Graphs:
+
+1) Graphs are cycles consisting of a set of vertices and edges with adjacencies being between the
+vertices that have a shared edge. Graphs also have directed and non-directed relationships.
+2) Graphs are cyclic and both directed and non-directed with many parents whereas trees are acyclic 
+and non-directed with only 1 head parent (hierarchy)
+3) My project data model and the relationships between the tables
+
+Performance of different data structures:
+
+Data Structure        Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array)   O(1)    O(n)    O(1)     O(n)    O(n)    O(1)   
+Linked List           O(n)    O(n)    O(1)     O(1)    O(1)    O(n)
+Doubly-Linked List    O(n)    O(n)    O(1)     O(1)    O(1)    O(1)
+Queue (as Array)       X       X      O(1)      X      O(n)     X
+Queue (as LL or DLL)   X       X      O(1)      X      O(1)     X
+Stack (Ar, LL, DLL)    X       X      O(1)      X       X      O(1) 
+Deque (as DLL)         X       X      O(1)     O(1)    O(1)    O(1)
+
+
+Data Structure          Get        Add    Delete  Iterate  Memory
+Dictionary (Hash Map)   O(1)       O(1)    O(1)    O(n)    medium
+Set (Hash Map)          O(1)       O(1)    O(1)    O(n)    medium         
+Binary Search Tree      O(log n)   O(n)    O(n)    O(1)    more memory efficient         
+Tree                    O(n)       O(1)    O(1)    O(1)    more memory efficient (large)
+
+Sorting:
+
+1) Bubblesort takes the first 2 items, compares to see which one is the larger number and moves it
+to the right, until it goes through the entireity of the list comparing pairs and the largest number 
+reaches the end and stops.
+2) Mergesort uses a similar method to trees in that it "divides and conquers". It starts by dividing
+its list into an equal half (which is O(log n)) and then combines the 2 lists into a sorted list by
+comparing the first item of each list against each other to see which of the items is the lower number
+which then gets appended to an empty list. It goes through  both lists until it produces 1 sorted list.
+3) Quicksort operates on paritions where a item is selected from the list to be a partition and
+it moves lower numbers to the right of it and larger numbers to the left of it.
+
+Git Branching:
+
+1) I would use git branching if I want to see the list of all branches in my repository. Typed 'git branch'
+in my console and know that my repository only has a master branch.
+2) A pull request is a feature on Github that allows you to inform others of changes you've pushed to your branch
+which they can then review, comment on or merge.
